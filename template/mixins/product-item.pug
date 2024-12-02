@@ -1,0 +1,11 @@
+mixin product-item(product)
+    .product-item
+        .product-item__image
+            img(src=product.image alt="")
+        .product-item__content
+            h3.product-item__title #{product.title}
+                a(href="#") 
+            .product-item__info
+                .product-item__info-item Giống: <b>#{product.gender}</b>
+                .product-item__info-item Tuổi: <b>#{product.age}</b>
+            .product-item__price #{product.price}

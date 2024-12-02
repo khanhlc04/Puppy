@@ -1,0 +1,29 @@
+header.header 
+    .container
+        .header__wrap
+            button.header__menu-mobile
+                i(class="fa-solid fa-bars")
+            .header__logo
+                //- Logo
+                img(src="../assets/images/Frame.svg" class="box header__logo")
+                a(href="index.html")
+            nav.header__menu
+                ul
+                    li
+                        a(href="index.html")
+                    li
+                        a(href="#") Danh Mục
+                    li
+                        a(href="#") Giới Thiệu
+                    li
+                        a(href="#") Liên Hệ
+
+            //- Search
+            button.header__search-mobile
+                i(class="fa-solid fa-magnifying-glass")
+            form.header__form(acton="#")
+                button
+                    i(class="fa-solid fa-magnifying-glass")
+                input(name="keyword" placeholder="Nhập từ khóa...")
+            a.button(href="#") Tham Gia Cộng Đồng
+//-End Header
