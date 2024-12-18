@@ -564,6 +564,15 @@ a {
 .section-4__wrap .blog-item {
   width: calc((100% - 40px) / 3);
 }
+.section-4 .swipper-blog .swiper-wrapper {
+  margin-bottom: 15px;
+}
+.section-4 .swipper-blog .swipper-slide {
+  height: auto;
+}
+.section-4 .swipper-blog .swipper-slide .blog-item {
+  height: 100%;
+}
 .section-4__button-bottom {
   display: none;
 }

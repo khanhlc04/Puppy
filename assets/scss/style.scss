@@ -652,6 +652,18 @@ a{
         width: calc((100% - 40px) / 3);
     }
 
+    .swipper-blog .swiper-wrapper{
+        margin-bottom: 15px;
+    }
+
+    .swipper-blog .swipper-slide{
+        height: auto;
+    }
+
+    .swipper-blog .swipper-slide .blog-item{
+        height: 100%;
+    }
+
     &__button-bottom{
         display: none;
     }
