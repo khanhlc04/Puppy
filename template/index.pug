@@ -1,5 +1,5 @@
-extends ../layouts/default
-include ../mixins/product-item.pug
+extends ./layouts/default
+include ./mixins/product-item.pug
 
 block title
     title Trang Chủ
@@ -10,7 +10,7 @@ block main
         .container
             .section-1__wrap
                 .section-1__content
-                    img.section-1__bg-1(data-aos="fade-up" data-aos-duration="800" data-aos-delay="800" src="../assets/images/Rectangle 3.svg" alt="")
+                    img.section-1__bg-1(data-aos="fade-up" data-aos-duration="800" data-aos-delay="800" src="assets/images/Rectangle 3.svg" alt="")
                     h1.section-1__title
                         .section-1__title-main(data-aos="fade-up" data-aos-duration="800") Thêm Một Bạn
                         .section-1__title-sub(data-aos="fade-up" data-aos-duration="800" data-aos-delay="150") Thêm Ngàn Niềm Vui
@@ -21,56 +21,57 @@ block main
                             i(class="fa-regular fa-circle-play")
                         a.button(href="#" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600") Khám Phá Ngay
                 .section-1__image
-                    img.section-1__bg-3(data-aos="fade-up" data-aos-duration="800" src="../assets/images/Group 2.svg")
-                    img.section-1__image-main(data-aos="fade-up" data-aos-duration="800" src="../assets/images/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.png")
+                    img.section-1__bg-3(data-aos="fade-up" data-aos-duration="800" src="assets/images/Group 2.svg")
+                    img.section-1__image-main(data-aos="fade-up" data-aos-duration="800" src="assets/images/good-humored-woman-holds-dog-laughing-pink-background-emotional-sort-haired-girl-grey-hoodie-poses-with-corgi-isolated 1.png")
     //-End Section 1
 
     //-Section 2
     - 
         var pets = [{
-            image: '../assets/images/Frame 7.svg',
+            image: 'assets/images/Frame 7.svg',
             title: 'MO231 - Pomeranian Trắng',
             gender: 'Đực',
             age: '02 tháng',
             price: '6.900.000 VND'
-            },{
-                image: '../assets/images/image 2.jpg',
+            },
+            {
+                image: 'assets/images/image 2.jpg',
                 title: 'MO502 - Poodle Tiny Vàng',
                 gender: 'Cái',
                 age: '02 tháng',
                 price: '3.900.000 VND'
             },{
-                image: '../assets/images/image 3 (3).jpg',
+                image: 'assets/images/image 3 (3).jpg',
                 title: 'MO102 - Poodle Tiny Sepia',
                 gender: 'Đực',
                 age: '02 tháng',
                 price: '4.000.000 VND'
             },{
-                image: '../assets/images/image 4.jpg',
+                image: 'assets/images/image 4.jpg',
                 title: 'MO512 - Alaskan Malamute',
                 gender: 'Đực',
                 age: '03 tháng',
                 price: '8.900.000 VND'
             },{
-                image: '../assets/images/image 5.jpg',
+                image: 'assets/images/image 5.jpg',
                 title: 'MO231 - Pembroke Corgi',
                 gender: 'Đực',
                 age: '02 tháng',
                 price: '7.900.000 VND'
             },{
-                image: '../assets/images/image 6.jpg',
+                image: 'assets/images/image 6.jpg',
                 title: 'MO502 - Pembroke Corgi',
                 gender: 'Cái',
                 age: '02 tháng',
                 price: '9.000.000 VND'
             },{
-                image: '../assets/images/image 7.jpg',
+                image: 'assets/images/image 7.jpg',
                 title: 'MO231 - Pomeranian Trắng',
                 gender: 'Cái',
                 age: '02 tháng',
                 price: '6.500.000 VND'
             },{
-                image: '../assets/images/image 8.jpg',
+                image: 'assets/images/image 8.jpg',
                 title: 'MO512 - Poodle Tiny',
                 gender: 'Đực',
                 age: '02 tháng',
@@ -85,7 +86,7 @@ block main
                     .box-head__sub-title(data-aos="fade-up" data-aos-duration="800") Có gì mới?
                     h2.box-head__title(data-aos="fade-up" data-aos-duration="800" data-aos-delay="150") Một số vật nuôi của chúng tôi
                 .box-head__right
-                    a.button-outline(data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" href="./product-detail.pug") Xem thêm 
+                    a.button-outline(data-aos="fade-up" data-aos-duration="800" data-aos-delay="300" href="product-detail.pug") Xem thêm 
                         i(class="fa-solid fa-angle-right")
             .section-2__wrap(data-aos="fade-up" data-aos-duration="800" data-aos-delay="450")
                 each pet in pets
@@ -97,7 +98,7 @@ block main
     //-End Section-2
 
     //-Section-3
-    include ../partials/section-3.pug
+    include ./partials/section-3.pug
     //-End Section-3
 
     //-Section-4
@@ -117,7 +118,7 @@ block main
                         .blog-item
                             a(href="#")
                                 .blog-item__image
-                                    img(src="../assets/images/image 3.jpg" alt="")
+                                    img(src="assets/images/image 3.jpg" alt="")
                                 .blog-item__content
                                     .blog-item__tag Kiến thức thú cưng
                                     h3.blog-item__title Pomeranian là gì? Cách nhận biết chó Pomeranian
@@ -127,7 +128,7 @@ block main
                         .blog-item
                             a(href="#")
                                 .blog-item__image
-                                    img(src="../assets/images/blog-2.jpg" alt="")
+                                    img(src="assets/images/blog-2.jpg" alt="")
                                 .blog-item__content
                                     .blog-item__tag Kiến thức thú cưng
                                     h3.blog-item__title Chế độ ăn cho chó bạn cần biết
@@ -137,7 +138,7 @@ block main
                         .blog-item
                             a(href="#")
                                 .blog-item__image
-                                    img(src="../assets/images/blog-3.jpg" alt="")
+                                    img(src="assets/images/blog-3.jpg" alt="")
                                 .blog-item__content
                                     .blog-item__tag Kiến thức thú cưng
                                     h3.blog-item__title Pomeranian là gì? Cách nhận biết chó Pomeranian
@@ -148,7 +149,7 @@ block main
                         .blog-item
                             a(href="#")
                                 .blog-item__image
-                                    img(src="../assets/images/image 3.jpg" alt="")
+                                    img(src="assets/images/image 3.jpg" alt="")
                                 .blog-item__content
                                     .blog-item__tag Kiến thức thú cưng
                                     h3.blog-item__title Pomeranian là gì? Cách nhận biết chó Pomeranian

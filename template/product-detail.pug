@@ -1,5 +1,5 @@
-extends ../layouts/default.pug 
-include ../mixins/product-item.pug
+extends ./layouts/default.pug 
+include ./mixins/product-item.pug
 
 block title 
     title Trang Chi Tiết Sản Phẩm
@@ -11,13 +11,13 @@ block main
             .section-6__wrap 
                 .section-6__images 
                     .section-6__images-main
-                        img(src="../assets/images/pro1.jpg", alt="")
+                        img(src="assets/images/pro1.jpg", alt="")
                     .section-6__images-thumb 
-                        img(src="../assets/images/pro1.jpg", alt="")
-                        img(src="../assets/images/pro2.jpg", alt="")
-                        img(src="../assets/images/pro3.jpg", alt="")
-                        img(src="../assets/images/pro4.jpg", alt="")
-                        img(src="../assets/images/pro5.jpg", alt="")
+                        img(src="assets/images/pro1.jpg", alt="")
+                        img(src="assets/images/pro2.jpg", alt="")
+                        img(src="assets/images/pro3.jpg", alt="")
+                        img(src="assets/images/pro4.jpg", alt="")
+                        img(src="assets/images/pro5.jpg", alt="")
 
                 .section-6__content
                     .breadcrumb 
@@ -26,11 +26,11 @@ block main
                                 nav.breadcrumb__item 
                                     ul 
                                         li 
-                                            a(href="./index.html") Trang Chủ
+                                            a(href="index.html") Trang Chủ
                                         li 
                                             a(href="#") Chó
                                         li 
-                                            a(href="./index.html") Chó nhỏ
+                                            a(href="index.html") Chó nhỏ
                     h1.section-6__title Shiba Inu Màu Nâu Đỏ
                     .section-6__price 12.000.000 VND
                     .section-6__buttons
@@ -77,25 +77,25 @@ block main
     //-Section 2
     - 
         var pets = [{
-                image: '../assets/images/Frame 7.svg',
+                image: 'assets/images/Frame 7.svg',
                 title: 'MO231 - Pomeranian Trắng',
                 gender: 'Đực',
                 age: '02 tháng',
                 price: '6.900.000 VND'
             },{
-                image: '../assets/images/image 2.jpg',
+                image: 'assets/images/image 2.jpg',
                 title: 'MO502 - Poodle Tiny Vàng',
                 gender: 'Cái',
                 age: '02 tháng',
                 price: '3.900.000 VND'
             },{
-                image: '../assets/images/image 3 (3).jpg',
+                image: 'assets/images/image 3 (3).jpg',
                 title: 'MO102 - Poodle Tiny Sepia',
                 gender: 'Đực',
                 age: '02 tháng',
                 price: '4.000.000 VND'
             },{
-                image: '../assets/images/image 4.jpg',
+                image: 'assets/images/image 4.jpg',
                 title: 'MO512 - Alaskan Malamute',
                 gender: 'Đực',
                 age: '03 tháng',

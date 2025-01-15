@@ -1,5 +1,5 @@
-extends ../layouts/default.pug 
-include ../mixins/product-item.pug
+extends ./layouts/default.pug 
+include ./mixins/product-item.pug
 
 block title
     title Danh Sách Sản Phẩm
@@ -12,15 +12,15 @@ block main
                 nav.breadcrumb__item 
                     ul 
                         li 
-                            a(href="./index.html") Trang Chủ
+                            a(href="index.html") Trang Chủ
                         li 
                             a(href="#") Chó
                         li 
-                            a(href="./index.html") Chó nhỏ
+                            a(href="index.html") Chó nhỏ
     //- end breadcrumb
 
     //- section-3
-    include ../partials/section-3.pug
+    include ./partials/section-3.pug
     //- end section-3
 
     //-section-5
@@ -30,7 +30,7 @@ block main
                 .section-5__left
                     .box-filter 
                         .box-filter__title 
-                            img(src="../assets/images/icon-filter.svg") 
+                            img(src="assets/images/icon-filter.svg") 
                             |Bộ lọc 
                         .box-filter__group
                             .box-filter__group-label Giống 
@@ -68,49 +68,49 @@ block main
                 .section-5__right
                     - 
                         var pets = [{
-                                image: '../assets/images/Frame 7.svg',
+                                image: 'assets/images/Frame 7.svg',
                                 title: 'MO231 - Pomeranian Trắng',
                                 gender: 'Đực',
                                 age: '02 tháng',
                                 price: '6.900.000 VND'
                             },{
-                                image: '../assets/images/image 2.jpg',
+                                image: 'assets/images/image 2.jpg',
                                 title: 'MO502 - Poodle Tiny Vàng',
                                 gender: 'Cái',
                                 age: '02 tháng',
                                 price: '3.900.000 VND'
                             },{
-                                image: '../assets/images/image 3 (3).jpg',
+                                image: 'assets/images/image 3 (3).jpg',
                                 title: 'MO102 - Poodle Tiny Sepia',
                                 gender: 'Đực',
                                 age: '02 tháng',
                                 price: '4.000.000 VND'
                             },{
-                                image: '../assets/images/image 4.jpg',
+                                image: 'assets/images/image 4.jpg',
                                 title: 'MO512 - Alaskan Malamute',
                                 gender: 'Đực',
                                 age: '03 tháng',
                                 price: '8.900.000 VND'
                             },{
-                                image: '../assets/images/image 5.jpg',
+                                image: 'assets/images/image 5.jpg',
                                 title: 'MO231 - Pembroke Corgi',
                                 gender: 'Đực',
                                 age: '02 tháng',
                                 price: '7.900.000 VND'
                             },{
-                                image: '../assets/images/image 6.jpg',
+                                image: 'assets/images/image 6.jpg',
                                 title: 'MO502 - Pembroke Corgi',
                                 gender: 'Cái',
                                 age: '02 tháng',
                                 price: '9.000.000 VND'
                             },{
-                                image: '../assets/images/image 7.jpg',
+                                image: 'assets/images/image 7.jpg',
                                 title: 'MO231 - Pomeranian Trắng',
                                 gender: 'Cái',
                                 age: '02 tháng',
                                 price: '6.500.000 VND'
                             },{
-                                image: '../assets/images/image 8.jpg',
+                                image: 'assets/images/image 8.jpg',
                                 title: 'MO512 - Poodle Tiny',
                                 gender: 'Đực',
                                 age: '02 tháng',
@@ -120,7 +120,7 @@ block main
                     .section-5__head 
                         h2.section-5__title Chó nhỏ
                         .box-filter__title 
-                                img(src="../assets/images/icon-filter.svg") 
+                                img(src="assets/images/icon-filter.svg") 
                                 |Bộ lọc 
                     .section-5__list 
                         each pet in pets
